@@ -1,0 +1,29 @@
+Heap Sort
+Amount of attempts: 3
+Size = 10000 Range = (-10) : (10)
+Average time: 2(ms)
+
+Size = 10000 Range = (-1000) : (1000)
+Average time: 2(ms)
+
+Size = 10000 Range = (-10000) : (10000)
+Average time: 2(ms)
+
+Size = 100000 Range = (-10) : (10)
+Average time: 34(ms)
+
+Size = 100000 Range = (-1000) : (1000)
+Average time: 71(ms)
+
+Size = 100000 Range = (-10000) : (10000)
+Average time: 44(ms)
+
+Size = 1000000 Range = (-10) : (10)
+Average time: 459(ms)
+
+Size = 1000000 Range = (-1000) : (1000)
+Average time: 700(ms)
+
+Size = 1000000 Range = (-10000) : (10000)
+Average time: 797(ms)
+

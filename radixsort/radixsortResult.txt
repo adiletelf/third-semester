@@ -1,0 +1,29 @@
+Radix Sort
+Amount of attempts: 3
+Size = 10000 Range = (-10) : (10)
+Average time: 0(ms)
+
+Size = 10000 Range = (-1000) : (1000)
+Average time: 0(ms)
+
+Size = 10000 Range = (-10000) : (10000)
+Average time: 5(ms)
+
+Size = 100000 Range = (-10) : (10)
+Average time: 0(ms)
+
+Size = 100000 Range = (-1000) : (1000)
+Average time: 10(ms)
+
+Size = 100000 Range = (-10000) : (10000)
+Average time: 10(ms)
+
+Size = 1000000 Range = (-10) : (10)
+Average time: 46(ms)
+
+Size = 1000000 Range = (-1000) : (1000)
+Average time: 78(ms)
+
+Size = 1000000 Range = (-10000) : (10000)
+Average time: 88(ms)
+

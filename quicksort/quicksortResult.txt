@@ -1,0 +1,29 @@
+Quick Sort
+Amount of attempts: 3
+Size = 10000 Range = (-10) : (10)
+Average time: 0(ms)
+
+Size = 10000 Range = (-1000) : (1000)
+Average time: 1(ms)
+
+Size = 10000 Range = (-10000) : (10000)
+Average time: 1(ms)
+
+Size = 100000 Range = (-10) : (10)
+Average time: 7(ms)
+
+Size = 100000 Range = (-1000) : (1000)
+Average time: 22(ms)
+
+Size = 100000 Range = (-10000) : (10000)
+Average time: 21(ms)
+
+Size = 1000000 Range = (-10) : (10)
+Average time: 87(ms)
+
+Size = 1000000 Range = (-1000) : (1000)
+Average time: 179(ms)
+
+Size = 1000000 Range = (-10000) : (10000)
+Average time: 282(ms)
+
