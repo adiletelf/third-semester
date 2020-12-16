@@ -7,6 +7,7 @@
 // #include "bmatrix.cpp"
 
 
+// not a smart way to do it
 void topologicalSort(BM& matrix)
 {
     int size = matrix.getRows();
@@ -58,7 +59,7 @@ void topologicalSort(BM& matrix)
 }
 
 
-
+// smart way (using boolean operations on boolean vectors)
 void top_sort(BM& matrix)
 {
     std::vector<int> top_sorted;
@@ -70,6 +71,13 @@ void top_sort(BM& matrix)
     {
         BV empty_cols = ~(matrix.disjunctionAll());
         empty_cols &= ~handled_cols; // ignore handled_cols
+
+        if (empty_cols.getWeight() == 0)
+        {
+            std::cout << "Graph has a cycle" << std::endl;
+            return;
+        }
+
         for (int col = 0; col < empty_cols.getLen(); ++col)
         {
             bool value = (bool)empty_cols[col];
@@ -80,6 +88,7 @@ void top_sort(BM& matrix)
                 top_sorted.push_back(col);
             }
         }
+
     }
 
     for (size_t i = 0; i < top_sorted.size(); ++i)
@@ -89,7 +98,6 @@ void top_sort(BM& matrix)
     }
     std::cout << std::endl;
 }
-
 
 
 
@@ -110,6 +118,7 @@ int main()
     matrix[3][4] = true;
     matrix[4][0] = true;
     matrix[4][2] = true;
+    //matrix[2][3] = true;
     matrix[5][1] = true;
     matrix[5][2] = true;
     matrix[5][4] = true;
@@ -118,7 +127,7 @@ int main()
     std::cout << matrix << std::endl;
 
 
-    //top_sort(matrix);
+    top_sort(matrix);
     // topologicalSort(matrix);
 
     return 0;
